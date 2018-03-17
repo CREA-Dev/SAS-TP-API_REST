@@ -20,3 +20,11 @@ npm run dev
 
 Le fichier [javascript.js](javascript.js) réuni un ensemble d'exemples pour comprendre le fonctionnement de base de javascript.
 Il est possible de l'exécuter avec la commande `node javascript.js`.
+
+# Modules
+
+Dans ce dépôt, vous trouverez 2 modules supplémentaires qui seront éventuellement plus tard.
+Vous n'en avez pas besoin pour commencer l'exercice.
+
+* `auth.js` pour gérer l'authentification sur les endpoints
+* `mongo.js` pour gérer les accès à une base de données MongoDB
