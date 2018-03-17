@@ -1,7 +1,7 @@
 # Installation
 
 1.  Installation de NodeJS: https://nodejs.org/en/download/
-2.  Clonage du dépôt:
+2.  Clonage du dépôt: `git clone https://github.com/CREA-Dev/SAS-TP-API_REST tp-api-rest && cd tp-api-rest`
 3.  Installation des modules externes: `npm install`
 
 # Lancement
@@ -9,7 +9,7 @@
 Lancer le serveur avec `node server.js`.
 Il est nécessaire de l'arrêter (CTRL+C) et de le relancer à chaque modification.
 
-Pour éviter cela, vous pouvez utiliser `nodemon`:
+Pour que le serveur se relance tout seul à chaque modification, vous pouvez utiliser `nodemon`:
 
 ```bash
 npm install -g nodemon
