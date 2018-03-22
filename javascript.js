@@ -68,4 +68,4 @@ data.articles.push(nouvelArticle);
 
 // Supprimer un élément d'un tableau
 delete data.articles[1]; // Pas très propre car laisse un emplacement vide
-data.articles = data.articles.filter((article, index) => index !== 1); // Propre mais plus compliqué à comprendre
+data.articles = data.articles.filter((article, index) => index !== parseInt("1")); // Propre mais plus compliqué à comprendre

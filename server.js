@@ -33,7 +33,15 @@ app.use(function(req, res, next) {
 const data = {
   items: [
     {
-      title: "Je suis un titre",
+      title: "Item de l'index 0",
+      content: "Je suis un contenu",
+    },{
+    
+      title: "Item de l'index 1",
+      content: "Je suis un contenu",
+    },{
+    
+      title: "Item de l'index 2",
       content: "Je suis un contenu",
     },
   ],
@@ -52,12 +60,12 @@ const data = {
   Répondre avec un object jSON: res.json({message: "Okay, bien reçu"})
 */
 // Lorsqu'on reçoit une requête GET
-// Exemple: curl localhost:8080/?index=3
+// Exemple: curl localhost:8080/?index=5
 // TODO: Retourner l'item correspondant à l'index envoyé dans la requête
 app.get("/", (req, res) => {
-  const paramsGet = req.query; // {index: "3"}
+  const paramsGet = req.query; // {index: "5"}
   console.log({ paramsGet });
-  const text = `L'index reçu est : ${paramsGet.index}\n`;
+  const text = `L'item a renvoyer est : ${data.items[paramsGet.index]}\n`;
   res.send(text); // On répond à la requête avec un texte
 });
 
@@ -74,7 +82,7 @@ app.post("/", (req, res) => {
 // Exemple: curl -X DELETE localhost:8080/6
 // TODO: Supprimer l'item correspondant à l'index envoyé en paramètre d'URL
 app.delete("/:number", (req, res) => {
-  const paramsURL = req.params; //  {number: 6}
+  const paramsURL = req.params; //  {number: "6"}
   console.log({ paramsURL });
   res.json(paramsURL);
 });
